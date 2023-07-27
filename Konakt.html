@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strona główna</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+        <div class="logo">
+            <div>
+                <img src="logo.jpg" alt="Google logo">
+            </div>
+        </div>
+        <nav>
+          <li><span><a href="Main.html">Strona Główna</a></span></li>
+            <li><span><a href="Miasto.html">O mieście</a></span></li>
+            <li><span><a href="Historia.html">Historia</a></span></li>
+            <li><span><a href="Kontakt.html">Kontakt</a></span></li>
+            <li><span><a href="Napisz.html" class="button">Masz miejsce do zgłoszenia? Napisz tutaj</a></span></li>
+        </nav>
+    </div>
+</header>
+
+
+<div class="Opis"><h1>Kontakt</h1><br>
+
+
+
+</div>
+<div class="container">
+  <h3>Urząd Miejski w Przemyślu <br> Rynek 1, 37-700 Przemyśl <br> tel. 16 678 68 20 <br> fax 16 678 64 49 <br> e-mail: kancelaria@um.przemysl.pl <br> 
+    Godziny pracy: pn-pt: 7.30-15.30
+  </div></h3>
+</div>
+  <div id="map"></div>  
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 49.7847, lng: 22.7672  },
+        zoom: 14,
+      });
+    }
+  </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChfwk1k3lmtA5A8zr3aKMkJHWWDw5XyaU&callback=initMap"></script>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
